@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+}
+
+:root{
+    --childColor--:wheat;
+    --border_color--:rgb(214, 214, 214);
+    --main_color--:rgb(46, 127, 235);
+
+}
+
+.app{
+    width: 950px;
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 0.5px solid var(--border_color--);
+    position: relative;
+}
+
+.filters{
+    position: absolute;
+    display: none;
+    right: 11px;
+    top: 56px;
+    width: 50%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.filtered_item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border: 1px solid var(--border_color--);
+    box-shadow: 5px 5px 5px rgb(235, 235, 235);
+    border-radius: 10px;
+    padding: 7px;
+    gap: 10px;
+}
+.filtered_item:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.filtered_item>img{
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo>img{
+    width: 50px;
+}
+
+.search_bar{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    border: 0.5px solid gray;
+    padding: 5px;
+    border-radius: 20px;
+    width: 50%;
+}
+.search_bar>input{
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.search_bar>img{
+    width: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.main_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar{
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border:2px solid var(--border_color--);
+}
+
+.avatar>img{
+    width: 97px;
+    border-radius: 50%;
+    
+}
+.link>img,
+.location>img{
+    width: 15px;
+}
+.link,
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 5px;
+}
+
+.link_avatar,
+.about_user{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    gap: 5px;
+}
+
+.link_avatar{
+    padding-top: 5px;
+    align-items: center;
+    flex: 1;
+}
+.about_user{
+    flex: 2;
+}
+.name{
+    font-size: 30px;
+    font-weight: 800;
+}
+.main_repos{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+.repo_card{
+    width: 45%;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.repo_card:hover{
+    box-shadow: 5px 5px 10px rgb(175, 175, 175);
+    border: 1px solid black;
+}
+
+/* media for repo card  */
+
+@media(max-width:500px) {
+    .repo_card{
+        width: 98%;
+    }
+}
+
+.repo_card>.titel{
+    font-size: 25px;
+    font-weight: 600;
+}
+.repo_card>.lang_items,
+.lang_items>.lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+.repo_card>.lang_items{
+    gap: 5px;
+}
+
+.lang_items>.lang{
+    padding: 2px;
+    font-weight: 700;
+    background-color: var(--main_color--);
+    color: white;
+    border: 0.5px solid var(--border_color--);
+    border-radius: 5px;
+}
+
+.main_pages_controler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages{
+    display: flex;
+}
+.pages>.page_btn,
+.pageControl_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid var(--border_color--);
+    font-weight: 900;
+    color: var(--main_color--);
+    cursor: pointer;
+}
+
+.pages>.page_btn:hover{
+    background-color: var(--main_color--);
+    color: white;
+}
+
+.pageControl_btn:hover{
+    background-color: var(--main_color--);
+    color: white;
+}

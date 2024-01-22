@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Find repos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <header>
+            <div class="logo">
+                <img src="./assets/logo.png" alt="">
+                <h2>GitHub User Info <i style="color: rgb(46, 127, 235);">Explorer</i></h2>
+            </div>
+            <div class="search_bar">
+                <img src="./assets/loding.gif" alt="loading" class="suggestion_loding" style="display: none;">
+                <img src="./assets/search.png" alt="search" class="Search_icon">
+                <input type="text" autocomplete="off" placeholder="Github username">
+                <img src="./assets/cross.png" alt="clear" class="clear" onclick="clearInput()" style="display: none;">
+            </div>
+            <div class="filters">
+                <!-- suggestion user  -->
+            </div>
+    
+        </header>
+        <section class="main" >
+            <div class="main_header">
+                <!-- user info  -->
+            </div>
+            <div class="main_repos">
+                <!-- repo_card goes here-->
+            </div>
+            
+        </section>
+        <section class="default"
+        style="background-color: white;
+                opacity: 0.2;
+                display: flex;
+                justify-content: center;
+                align-items: center;"
+        >
+            <img 
+            src="./assets/logo.png" 
+            alt="default">
+        </section>
+        <section class="loding"
+        style="background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: none;"
+        >
+            <img 
+            src="./assets/loding.gif" 
+            alt="default">
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
