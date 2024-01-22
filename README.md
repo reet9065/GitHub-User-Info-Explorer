@@ -37,7 +37,7 @@ Go to the project directory
 
 #### suggesting user each time after 1 Second when  the user stopped typing
 
-```http
+```https
   GET https://api.github.com/search/users?q=${UserInput}&per_page=10
 ```
 
@@ -47,7 +47,7 @@ Go to the project directory
 
 #### Geting user Onclick
 
-```http
+```https
   GET https://api.github.com/users/${username}
 ```
 
@@ -57,7 +57,7 @@ Go to the project directory
 
 #### Geting repos
 
-```http
+```https
   GET https://api.github.com/users/${e.dataset.username}/repos?per_page=10&sort=created&direction=desc
 ```
 
