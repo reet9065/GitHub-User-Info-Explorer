@@ -3,7 +3,7 @@
 
 
 
-# GitHub User Info Explorer | [Live running](https://www.google.com/)
+# GitHub User Info Explorer |
 
 
 The GitHub User Info Explorer is a user-friendly application designed to provide instant insights into GitHub users' profiles. With a simple and intuitive interface, users can quickly retrieve comprehensive information about any GitHub username they enter into the search bar.
